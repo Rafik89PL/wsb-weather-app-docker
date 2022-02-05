@@ -17,7 +17,7 @@ $ docker pull rafalklimczak1989/gowe
 #### Build container
 
 ```
-$ docker build -t gowe .
+$ docker build -t wego .
 ```
 
 
@@ -34,26 +34,26 @@ Today only openweather map is giving free account
 #### Usage
 
 ```
-$ docker run --rm 
+$ docker run --rm wego
 ```
 
 In order to print help, run
 
 ```
-$ docker run --rm gowe -h
+$ docker run --rm wego -h
 ```
 
 In order to print weather for London, use:
 
 ```
-$ docker run --rm gowe -d 3 -l "London" -b openweathermap -owm-api-key <YOUR_API_KEY>
+$ docker run --rm wego -d 3 -l "London" -b openweathermap -owm-api-key <YOUR_API_KEY>
 ```
 
 Where:
 `-d` - number of days  
 `-l` - location  
 `-b` - backend (one of mentioned services)
-`-owm-api-key` - API key (in this case for openweathermap)  
+`-own-api-key` - API key (in this case for openweathermap)  
 
 #### Cloud deployment with Ansible 
 
