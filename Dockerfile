@@ -16,10 +16,6 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/bin/wego .
 
 FROM alpine:latest
 
-# For Travis build
-ARG BUILD_DATE
-ARG VCS_REF
-ARG VER
 
 LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.build-date=$BUILD_DATE
